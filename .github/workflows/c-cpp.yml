@@ -19,3 +19,5 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
+    - name: build application
+      run: make build
