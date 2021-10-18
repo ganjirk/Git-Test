@@ -3,10 +3,10 @@
 
 CC=gcc # define the compiler to use
 TARGET=runme # define the name of the executable
-SOURCES=.c
+SOURCES=*.c
 CFLAGS=-O3
 LFLAGS=-lm
-DEPS=.h
+DEPS=*.h
 
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
