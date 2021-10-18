@@ -3,10 +3,10 @@
 
 CC=gcc # define the compiler to use
 TARGET=runme # define the name of the executable
-SOURCES=%.c
+SOURCES=.c
 CFLAGS=-O3
 LFLAGS=-lm
-DEPS=%.h
+DEPS=.h
 
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
@@ -22,7 +22,7 @@ purge: clean
 	rm -f $(TARGET)
 	
 # the target is obtained linking all .o files
-all: $(SOURCES) $(TARGET)
+all: $(DEPS) $(SOURCES) $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(CC) $(LFLAGS) $(OBJS) -o $(TARGET)
