@@ -6,7 +6,7 @@ TARGET=runme # define the name of the executable
 SOURCES=*.c
 CFLAGS=-O3
 LFLAGS=-lm
-DEPS=*.h
+DEPS=basichead.h
 OBJ=*.o
 
 ################################################################################
@@ -18,14 +18,15 @@ OBJ=*.o
 
 # the target is obtained linking all .o files
 
-all: Main.o Calc.o
+all: $(TARGET)
+$(TARGET): Main.o Calc.o
 	$(CC) $(LFLAGS) -o $(TARGET) $(OBJ) 
 
-Main.o: Main.c
-	$(CC) $(LFLAGS) -c Main.c
+#Main.o: Main.c
+#	$(CC) $(LFLAGS) -c Main.c
 
-Calc.o: Calc.c
-	$(CC) $(LFLAGS) -c Calc.c $(DEPS)
+#Calc.o: Calc.c
+#	$(CC) $(LFLAGS) -c Calc.c $(DEPS)
 
 clean:
 	rm -f *.o
