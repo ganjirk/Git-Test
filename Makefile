@@ -21,10 +21,10 @@ OBJ=*.o
 all: $(OBJ)
 	$(CC) $(LFLAGS) $(OBJ) -o $(TARGET)
 
-Main.o: Main.c $(DEPS)
-	$(CC) $(LFLAGS) -c Main.c $(DEPS)
+Main.o: Main.c
+	$(CC) $(LFLAGS) -c Main.c
 
-Calc.o: Calc.c $(DEPS)
+Calc.o: Calc.c
 	$(CC) $(LFLAGS) -c Calc.c $(DEPS)
 
 clean:
