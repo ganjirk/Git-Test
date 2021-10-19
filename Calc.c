@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "basichead.h"
 #include <stdlib.h>
-int main ()
+int calc ()
 {
   int c, a, b;
   printf
