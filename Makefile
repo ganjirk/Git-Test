@@ -19,7 +19,7 @@ OBJS=$(OBJSC:.cpp=.o)
 
 all: $(DEPS) $(SOURCES) $(TARGET)
 
-$(TARGET): $(OBJS)
+$(TARGET): $(OBJS) $(DEPS)
 	$(CC) $(LFLAGS) $(OBJS) -o $(TARGET)
 	
 clean:
