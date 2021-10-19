@@ -18,9 +18,7 @@ OBJ=*.o
 
 # the target is obtained linking all .o files
 
-all: $(OBJ) $(TARGET)
-
-$(TARGET): $(OBJ) $(DEPS)
+all: $(OBJ)
 	$(CC) $(LFLAGS) $(OBJ) -o $(TARGET)
 
 Main.o: Main.c $(DEPS)
