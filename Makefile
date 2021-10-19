@@ -7,21 +7,28 @@ SOURCES=*.c
 CFLAGS=-O3
 LFLAGS=-lm
 DEPS=*.h
+OBJ=*.o
 
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
 
 # define list of objects
-OBJSC=$(SOURCES:.c=.o)
-OBJS=$(OBJSC:.cpp=.o)
+#OBJSC=$(SOURCES:.c=.o)
+#OBJS=$(OBJSC:.cpp=.o)
 
 # the target is obtained linking all .o files
 
-all: $(DEPS) $(SOURCES) $(TARGET)
+all: $(OBJ) $(TARGET)
 
-$(TARGET): $(OBJS) $(DEPS)
-	$(CC) $(LFLAGS) $(OBJS) -o $(TARGET)
-	
+$(TARGET): $(OBJ) $(DEPS)
+	$(CC) $(LFLAGS) $(OBJ) -o $(TARGET)
+
+Main.o: Main.c $(DEPS)
+	$(CC) $(LFLAGS) -c Main.c $(DEPS)
+
+Calc.o: Calc.c $(DEPS)
+	$(CC) $(LFLAGS) -c Calc.c $(DEPS)
+
 clean:
 	rm -f *.o
 	
