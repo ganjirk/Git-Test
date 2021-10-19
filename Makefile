@@ -19,7 +19,7 @@ OBJ=Main.o Calc.o
 # the target is obtained linking all .o files
 
 %.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(LFLAGS)
+	$(CC) $(LFLAGS) -c -o $@ $<
 	
 all: $(TARGET)
 $(TARGET): $(OBJ)
@@ -34,7 +34,7 @@ $(TARGET): $(OBJ)
 clean:
 	rm -f *.o
 	
-purge: clean
+purge: 
 	rm -f $(TARGET)
 
 ################################################################################
