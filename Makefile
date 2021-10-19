@@ -18,8 +18,8 @@ OBJ=*.o
 
 # the target is obtained linking all .o files
 
-all: $(OBJ)
-	$(CC) $(LFLAGS) $(OBJ) -o $(TARGET)
+all: Main.o Calc.o
+	$(CC) $(LFLAGS) -o $(TARGET) $(OBJ) 
 
 Main.o: Main.c
 	$(CC) $(LFLAGS) -c Main.c
