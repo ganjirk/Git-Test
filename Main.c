@@ -9,7 +9,7 @@ int main ()
     {
         printf("Hello Again");
     }
-    if (c == 2)
+    else if (c == 2)
     {
         calc ();
     }

@@ -5,11 +5,11 @@ int calc ()
 {
   int c, a, b;
   printf
-    ("Enter the choice: \n 1. Add \n 2. Multiply\n 3. Substract\n 4. Division\n");
+    ("Select Option: \n\n 1. Add \n 2. Multiply\n 3. Substract\n 4. Division\n\n Enter Choice: ");
   scanf ("%d", &c);
   if (c > 4)
   {
-      printf ("Wrong Selection\n");
+      printf ("Wrong Selection - Bye\n");
       exit;
   }
   else if (c < 5)
@@ -17,8 +17,7 @@ int calc ()
       printf ("Enter First number: ");
       scanf ("%d", &a);
       printf ("Enter Second number: ");
-      scanf ("%d", &b);
-      printf ("C value%d\n", c);
+      scanf ("%d", &b);      
   }
   if (c == 1)
   {

@@ -12,24 +12,14 @@ OBJ=Main.o Calc.o
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
 
-# define list of objects
-#OBJSC=$(SOURCES:.c=.o)
-#OBJS=$(OBJSC:.cpp=.o)
+runme: Main.o Calc.o
+	$(CC) $(LFLAGS) -o runme Main.o Calc.o
 
-# the target is obtained linking all .o files
+Main.o: Main.c
+	$(CC) $(LFLAGS) -c Main.c
 
-%.o: %.c $(DEPS)
-	$(CC) $(LFLAGS) -c -o $@ $<
-	
-all: $(TARGET)
-$(TARGET): $(OBJ)
-	$(CC) $(LFLAGS) -o $@ $^ 
-
-#Main.o: Main.c
-#	$(CC) $(LFLAGS) -c Main.c
-
-#Calc.o: Calc.c
-#	$(CC) $(LFLAGS) -c Calc.c $(DEPS)
+Calc.o: Calc.c
+	$(CC) $(LFLAGS) -c Calc.c $(DEPS)
 
 clean:
 	rm -f *.o
