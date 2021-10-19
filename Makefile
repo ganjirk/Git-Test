@@ -18,13 +18,13 @@ OBJ=Main.o Calc.o
 
 # the target is obtained linking all .o files
 
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(LFLAGS)
+	
 all: $(TARGET)
 $(TARGET): $(OBJ)
 	$(CC) $(LFLAGS) -o $@ $^ 
 
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
-	
 #Main.o: Main.c
 #	$(CC) $(LFLAGS) -c Main.c
 
