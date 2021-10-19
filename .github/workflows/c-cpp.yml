@@ -16,4 +16,4 @@ jobs:
     - name: make Cln
       run: make clean
     - name: make
-      run: make all
+      run: make
