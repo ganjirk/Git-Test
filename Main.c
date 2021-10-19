@@ -12,5 +12,9 @@ int main ()
     {
         int calc ();
     }
+	else
+	{
+		printf("Bye");
+	}
 	return 0;
 }
