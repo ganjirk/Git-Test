@@ -18,4 +18,4 @@ jobs:
     - name: make purge
       run: make purge
     - name: make
-      run: make all
+      run: make
