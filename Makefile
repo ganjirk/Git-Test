@@ -22,6 +22,9 @@ all: $(TARGET)
 $(TARGET): Main.o Calc.o
 	$(CC) $(LFLAGS) -o $(TARGET) $(OBJ) 
 
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+	
 #Main.o: Main.c
 #	$(CC) $(LFLAGS) -c Main.c
 
