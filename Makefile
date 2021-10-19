@@ -7,7 +7,7 @@ SOURCES=*.c
 CFLAGS=-O3
 LFLAGS=-lm
 DEPS=basichead.h
-OBJ=*.o
+OBJ=Main.o Calc.o
 
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
@@ -19,8 +19,8 @@ OBJ=*.o
 # the target is obtained linking all .o files
 
 all: $(TARGET)
-$(TARGET): Main.o Calc.o
-	$(CC) $(LFLAGS) -o $(TARGET) $(OBJ) 
+$(TARGET): $(OBJ)
+	$(CC) $(LFLAGS) -o $@ $^ 
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
