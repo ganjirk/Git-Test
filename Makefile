@@ -15,17 +15,18 @@ DEPS=*.h
 OBJSC=$(SOURCES:.c=.o)
 OBJS=$(OBJSC:.cpp=.o)
 
+# the target is obtained linking all .o files
+
+all: $(DEPS) $(SOURCES) $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(LFLAGS) $(OBJS) -o $(TARGET)
+	
 clean:
 	rm -f *.o
 	
 purge: clean
 	rm -f $(TARGET)
-	
-# the target is obtained linking all .o files
-all: $(DEPS) $(SOURCES) $(TARGET)
-
-$(TARGET): $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) -o $(TARGET)
 
 ################################################################################
 ################################################################################
