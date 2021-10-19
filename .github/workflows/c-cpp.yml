@@ -13,7 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make Cln
+    - name: make clean
       run: make clean
+    - name: make purge
+      run: make purge
     - name: make
-      run: make
+      run: make all
