@@ -6,7 +6,7 @@ TARGET=runme # define the name of the executable
 SOURCES=*.c
 CFLAGS=-O3
 LFLAGS=-lm
-DEPS=basichead.h
+DEPS=Include/basichead.h
 OBJ=Main.o Calc.o
 
 ################################################################################
