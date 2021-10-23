@@ -3,17 +3,17 @@
 
 void add(int a, int b)
 {
-    printf("Added value = %d\n", a + b);
+    printf("\nAdded value %d + %d = %d\n", a,b, a + b);
 }
 void multiply(int a, int b)
 {
-    printf("Multiplied value = %d\n", a * b);
+    printf("\nMultiplied value %d * %d = %d\n", a,b, a * b);
 }
 void substract(int a, int b)
 {
-    printf("Substract value = %d\n", a - b);
+    printf("\nSubstract value %d - %d = %d\n", a,b, a - b);
 }
 void division(int a, int b)
 {
-    printf("Division value = %d\n", a / b);
+    printf("\nDivision value %d / %d = %d\n", a,b, a / b);
 }

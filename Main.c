@@ -7,7 +7,7 @@ int main ()
     scanf("%d", &c);
     if (c == 1)
     {
-        printf("Hello Again");
+        printf("Hello Again\n");
     }
     else if (c == 2)
     {
