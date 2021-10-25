@@ -1,3 +1,3 @@
 FROM alpine
 
-RUN echo "Hello world!"
+RUN ./runme
