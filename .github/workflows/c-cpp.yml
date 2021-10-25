@@ -15,14 +15,14 @@ jobs:
 	
     - name: make clean
       run: make clean
-	  
+      
     - name: make purge
       run: make purge
-	  
+      
     - name: make
       run: make
       
-    - name: build and push docker image
+    - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: ganjirk/demoapps1
