@@ -1,13 +1,13 @@
-FROM gcc:4.9
+FROM gcc:latest
 
-#COPY ../src/*c
+COPY ../src/*c .
 
-#COPY ../Include/*h
+COPY ../Include/*h .
 
 #WORKDIR ./runme
 
-RUN gcc  -c -o Main.o cd ../src/ Main.c
-RUN gcc  -c -o Calc.o cd ../src/ Calc.c
+RUN gcc  -c -o Main.o Main.c
+RUN gcc  -c -o Calc.o Calc.c
 RUN gcc  -o runme Main.o Calc.o
 
 CMD ["./runme"]
