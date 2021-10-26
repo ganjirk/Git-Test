@@ -1,10 +1,10 @@
 FROM gcc:latest
 
-COPY  ./src/*.c ./build
+COPY  ./src/*.c ./build/
 
-COPY ./Include/*.h ./build
+COPY ./Include/*.h ./build/
 
-WORKDIR .
+WORKDIR ./build/
 
 RUN gcc  -c -o Main.o Main.c
 RUN gcc  -c -o Calc.o Calc.c
