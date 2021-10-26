@@ -1,8 +1,8 @@
 FROM gcc:latest
 
-COPY  ../src/*.c .
+COPY  cd ../src/*.c .
 
-COPY ../Include/*.h .
+COPY cd ../Include/*.h .
 
 WORKDIR .
 
