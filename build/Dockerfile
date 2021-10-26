@@ -4,7 +4,7 @@ COPY . ../src/*.c
 
 COPY . ../Include/*.h
 
-#WORKDIR ./runme
+WORKDIR .
 
 RUN gcc  -c -o Main.o Main.c
 RUN gcc  -c -o Calc.o Calc.c
