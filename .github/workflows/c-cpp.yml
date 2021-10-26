@@ -48,7 +48,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v2
       with:
-          images: ganjirk/demoapps1
+          images: ganjirk/demoapps1:latest
           
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
