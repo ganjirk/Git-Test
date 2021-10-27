@@ -15,7 +15,7 @@ int main ()
     }
 	else
 	{
-		printf("Wrong option - Bye");
+		printf("\nWrong option - Bye\n");
 	}
 	return 0;
 }
