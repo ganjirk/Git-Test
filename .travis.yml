@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+ - docker
+ 
+compiler: gcc
+
+before_install:
+ - docker build -t ganjirk/demoapps1 Docker .
+ - test -n $CC && unset CC
+ 
+script:
+ - docker run USERNAME/docker-react ./runme -- --coverage
