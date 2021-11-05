@@ -6,7 +6,7 @@ int calc ()
   int c, a, b;
   float r;
   printf
-    ("Select Option: \n\n 1. Add \n 2. Multiply\n 3. Substract\n 4. Division\n\n Enter Choice: ");
+    ("Select Option: \n\n 1. Add \n 2. Multiply\n 3. Substract\n 4. Division\n 5. concatenate\n\n Enter Choice: ");
   scanf ("%d", &c);
   if (c > 4)
   {
@@ -33,6 +33,9 @@ int calc ()
           case 4:
             division(a,b);
             break; 
+		  case 5:
+            concatenate (a,b);	
+			break; 
           default:
             printf ("\nWrong Selection - Bye\n");
       }

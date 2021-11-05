@@ -17,16 +17,14 @@ void division(int a, int b)
 {
     printf("\nDivision value %d / %d = %d\n", a,b, a / b);
 }
-int unsigned concatenate(unsigned x, unsigned y) {
+unsigned concatenate(unsigned a, unsigned b) {
+    int z;
     unsigned prw = 10;
-    printf("x value: ");
-    scanf("%d",&x);
-    printf("y value: ");
-    scanf("%d",&y);
-    while(y >= prw)
+    while(b >= prw)
     {
         prw = prw*10;
     }
-    z = x * prw + y;        
-    printf("%d",z);
+    z = a * prw + b;        
+    printf("concatenated value: %d",z);
+return 0;
 }
