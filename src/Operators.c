@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../Include/basichead.h"
 #include <stdlib.h>
-int calc ()
+int Operators ()
 {
   int c, a, b;
   float r;
