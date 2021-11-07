@@ -1,21 +1,32 @@
 # include <stdio.h>
+# include <stdlib.h>
+# include "basichead.h"
+
 int Operators ();
 int main ()
 {
-    int c=0;
-    printf("Select Option from below: \n\n \t1. Just print \n \t2. Operators\n\nEnter Option: ");
+    int c,a;
+    
+    printf
+        ("Select Option from below: \n\n \t1. Print Hello \n \t2. Operators\n \t3. Decimal to Binary\n\nEnter Option: ");
     scanf("%d", &c);
-    if (c == 1)
-    {
-        printf("Hello Again\n");
-    }
-    else if (c == 2)
-    {
+   switch (c)
+   
+   {
+    case 1:
+        printf("Hello!");
+        break;
+    case 2:
         Operators ();
-    }
-	else
-	{
-		printf("Wrong option - Bye");
-	}
-	return 0;
+        break;
+    case 3:
+        printf ("\nEnter Any Decimal number: ");
+        scanf ("%d", &a);
+        printf("\nBinary of Given Number %d = " , a);
+        ConvertBinary (a);
+        break; 
+    default:
+        printf("Wrong Option");
+   }
+   return 0;
 }

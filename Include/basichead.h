@@ -1,21 +1,24 @@
 // Basic Header File
+
+#ifndef BASICHEAD_H
+#define BASICHEAD_H
 # include <stdio.h>
 
-void add(int a, int b)
+int add(int a, int b)
 {
-    printf("\nAdded value %d + %d = %d\n", a,b, a + b);
+    printf("Added value = %d\n", a + b);
 }
 void multiply(int a, int b)
 {
-    printf("\nMultiplied value %d * %d = %d\n", a,b, a * b);
+    printf("Multiplied value = %d\n", a * b);
 }
 void substract(int a, int b)
 {
-    printf("\nSubstract value %d - %d = %d\n", a,b, a - b);
+    printf("Substract value = %d\n", a - b);
 }
 void division(int a, int b)
 {
-    printf("\nDivision value %d / %d = %d\n", a,b, a / b);
+    printf("Division value = %d\n", a / b);
 }
 unsigned concatenate(unsigned a, unsigned b) {
     int z;
@@ -28,6 +31,7 @@ unsigned concatenate(unsigned a, unsigned b) {
     printf("concatenated value: %d",z);
 return 0;
 }
+
 void ConvertBinary (int a)
 {
    int b[100] = {0};
@@ -62,3 +66,4 @@ int na[nr];
     printf ("%d ", na[i]);
     }
 }
+#endif //basichead_H
