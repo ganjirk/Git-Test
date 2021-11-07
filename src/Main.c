@@ -14,7 +14,7 @@ int main ()
    
    {
     case 1:
-        printf("Hello!");
+        printf("Hello!\n");
         break;
     case 2:
         Operators ();
@@ -22,7 +22,7 @@ int main ()
     case 3:
         printf ("\nEnter Any Decimal number: ");
         scanf ("%d", &a);
-        printf("\nBinary of Given Number %d = " , a);
+        printf("\nBinary of Given Number %d = \n" , a);
         ConvertBinary (a);
         break; 
     default:
