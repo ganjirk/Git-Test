@@ -1,6 +1,6 @@
 # include <stdio.h>
 # include <stdlib.h>
-# include "basichead.h"
+# include "../Include/basichead.h"
 
 int Operators ();
 int main ()
