@@ -7,17 +7,17 @@ CFLAGS=-O3
 LFLAGS=-lm
 DEPS=/home/rajkumarganji/Git-Test/Include/basichead.h
 DIR=/home/rajkumarganji/Git-Test/
-#OBJ=Main.o Calc.o
+#OBJ=Main.o Operators.o
 
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
 
-SRC=src/Main.c src/Calc.c
-TARGET=src/Main.o src/Calc.o
+SRC=src/Main.c src/Operators.c
+TARGET=src/Main.o src/Operators.o
 
 
 OBJ := src/Main.o
-OBJ += src/Calc.o
+OBJ += src/Operators.o
 
 # Compiles each of the object files as separate targets
 %.o: %.c $(DEPS)
