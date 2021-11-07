@@ -29,7 +29,6 @@ unsigned concatenate(unsigned a, unsigned b) {
 return 0;
 }
 void ConvertBinary (int a)
-void ConvertBinary (int a)
 {
    int b[100] = {0};
     int i=99;
