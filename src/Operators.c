@@ -6,7 +6,12 @@ int calc ()
   int c, a, b;
   float r;
 printf
-    ("Select Option: \n\n 1. Add \n 2. Multiply\n 3. Substract\n 4. Division\n 5. concatenate\n 6. Convert to Binary \n\n Enter Choice: ");
+    ("Select Option: \n\n"
+    "1. Add \t\t\t 6. Convert to Binary \n"
+    "2. Multiply\n"
+    "3. Substract\n"
+    "4. Division\n"
+    "5. concatenate\n\n Enter Choice: ");
   scanf ("%d", &c);
  if (c <6)
   {
@@ -31,9 +36,6 @@ printf
           case 5:
             concatenate (a,b);
             break; 
-          //case 6:
-          //ConvertBinary (a);
-          //  break; 
           default:
             printf ("\nWrong Selection - Bye\n");
       }
@@ -46,6 +48,7 @@ printf
       switch (c)
       {
 	  case 6:
+		  printf("\nBinary of Given Number %d = " , a);
           ConvertBinary (a);
           break; 
       }
