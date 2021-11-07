@@ -1,9 +1,9 @@
 # include <stdio.h>
-int calc ();
+int Operators ();
 int main ()
 {
     int c=0;
-    printf("Select Option from below: \n\n \t1. Just print \n \t2. Calc\n\nEnter Option: ");
+    printf("Select Option from below: \n\n \t1. Just print \n \t2. Operators\n\nEnter Option: ");
     scanf("%d", &c);
     if (c == 1)
     {
@@ -11,7 +11,7 @@ int main ()
     }
     else if (c == 2)
     {
-        calc ();
+        Operators ();
     }
 	else
 	{
