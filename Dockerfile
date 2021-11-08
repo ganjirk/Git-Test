@@ -6,7 +6,7 @@ COPY ./Include/*.h ./build/
 
 WORKDIR ./build/
 
-RUN   sed -i "s|../Include/basichead.h|basichead.h|g" Operators.c
+RUN   sed -i "s|../Include/basichead.h|basichead.h|g" *.c
 
 RUN gcc  -c -o Main.o Main.c
 RUN gcc  -c -o Operators.o Operators.c
