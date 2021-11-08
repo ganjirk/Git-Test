@@ -12,12 +12,13 @@ DIR=/home/rajkumarganji/Git-Test/
 ################################################################################
 ### DO NOT EDIT THE FOLLOWING LINES ############################################
 
-SRC=src/Main.c src/Operators.c
-TARGET=src/Main.o src/Operators.o
+SRC=src/Main.c src/Operators.c src/Functions.c
+TARGET=runme
 
 
 OBJ := src/Main.o
 OBJ += src/Operators.o
+OBJ += src/Functions.o
 
 # Compiles each of the object files as separate targets
 %.o: %.c $(DEPS)

@@ -30,7 +30,7 @@ int main ()
         numguess ();
         break; 
     default:
-        printf("Wrong Option");
+        printf("Wrong Option\n");
    }
    return 0;
 }
