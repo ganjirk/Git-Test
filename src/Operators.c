@@ -1,7 +1,7 @@
+# include "../Include/basichead.h"
 # include <stdio.h>
 # include <stdlib.h>
-# include "../Include/basichead.h"
-// # define basichead_H
+
 int
 Operators ()
 {
@@ -22,7 +22,7 @@ Operators ()
       switch (c)
 	{
 	case 1:
-	  add (a, b);
+      add (a, b);
 	  break;
 	case 2:
 	  multiply (a, b);
@@ -42,4 +42,3 @@ Operators ()
       return 0;
     }
 }
-// #endif

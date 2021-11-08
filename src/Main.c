@@ -1,20 +1,21 @@
+# include "../Include/basichead.h"
 # include <stdio.h>
 # include <stdlib.h>
-//# include "../Include/basichead.h"
 
 int Operators ();
+
 int main ()
 {
     int c,a;
-    
     printf
-        ("Select Option from below: \n\n \t1. Print Hello \n \t2. Operators\n \t3. Decimal to Binary\n\nEnter Option: ");
+        ("Select Option from below: \n\n \t1. Print Hello \n \t2. Operators\n \t3. Decimal to Binary\n \t"
+        "4. Number Guess Game\n\n Enter Option: ");
     scanf("%d", &c);
    switch (c)
    
    {
     case 1:
-        printf("Hello!\n");
+        printf("\nHello!\n");
         break;
     case 2:
         Operators ();
@@ -22,8 +23,11 @@ int main ()
     case 3:
         printf ("\nEnter Any Decimal number: ");
         scanf ("%d", &a);
-        printf("\nBinary of Given Number %d = \n" , a);
+        printf("\nBinary of Given Number %d = " , a);
         ConvertBinary (a);
+        break; 
+    case 4:
+        numguess ();
         break; 
     default:
         printf("Wrong Option");
