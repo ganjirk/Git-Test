@@ -13,4 +13,6 @@ RUN gcc  -c -o Operators.o Operators.c
 RUN gcc  -c -o Functions.o Functions.c
 RUN gcc  -o runme Main.o Operators.o Functions.o
 
+CMD ["chmod +x runme"]
+
 CMD ["./runme"]

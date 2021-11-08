@@ -84,12 +84,12 @@ void
 numguess (void)
 {
   int n=10, count = 0, rn, g;
-  printf ("Guess a number between 1-10\n\n");
+  printf ("\nGuess a number between 1-10 - Max tries = 3\n\n");
   srand ((unsigned int) time (NULL));
   rn = rand () % n;
     do {
-        if (count > 4) {
-        printf ("Lost the Game\n");
+        if (count >= 3) {
+        printf ("\nExceeded max tries = %d - Lost the Game\n", count);
         break;
         }
         printf("Enter guessed option: ");
