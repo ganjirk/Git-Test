@@ -3,6 +3,7 @@
 #include <math.h>
 #include <time.h>
 #include <stdlib.h>
+#define size 50
 
 void
 add (void)
