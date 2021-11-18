@@ -22,7 +22,7 @@ Operators ()
       switch (c)
 	{
 	case 1:
-      add (a, b);
+      add ();
 	  break;
 	case 2:
 	  multiply (a, b);
