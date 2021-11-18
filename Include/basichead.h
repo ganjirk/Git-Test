@@ -3,7 +3,7 @@
 #ifndef BASICHEAD_H
 #define BASICHEAD_H
 
-void add (int a, int b);
+void add (void);
 
 void multiply (int a, int b);
 
