@@ -15,4 +15,6 @@ RUN gcc  -o runme Main.o Operators.o Functions.o
 
 CMD ["chmod +x runme"]
 
+COPY runme ./build/
+
 CMD ["./runme"]

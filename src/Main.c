@@ -8,12 +8,13 @@ int main ()
 {
     int c,a;
     printf
-        ("Select Option from below: \n\n \t1. Print Hello \n \t2. Operators\n \t3. Decimal to Binary\n \t"
+        ("           Welcome!!           \n "
+        "\n ******** Press Q/q to quit the application ******** \n\n"
+            "Select Option from below: \n\n \t1. Print Hello \n \t2. Operators\n \t3. Decimal to Binary\n \t"
         "4. Number Guess Game\n\n Enter Option: ");
     scanf("%d", &c);
    switch (c)
-   
-   {
+    {
     case 1:
         printf("\nHello!\n");
         break;
@@ -28,7 +29,10 @@ int main ()
         break; 
     case 4:
         numguess ();
-        break; 
+        break;
+	case 'Q':
+    case 'q':
+        exit(0);
     default:
         printf("Wrong Option\n");
    }

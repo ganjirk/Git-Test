@@ -9,7 +9,7 @@ Operators ()
   float r;
   printf
     ("Select Option: \n\n"
-     "1. Add\n"
+     "1. Addition\n"
      "2. Multiply\n"
      "3. Substract\n" "4. Division\n" "5. concatenate\n\n Enter Choice: ");
   scanf ("%d", &c);

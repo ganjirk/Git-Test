@@ -5,9 +5,24 @@
 #include <stdlib.h>
 
 void
-add (int a, int b)
+add (void)
 {
-  printf ("Added value = %d\n", a + b);
+  int i, tmp, sum=0;
+
+printf ("\n\nEnter Numbers, Type Add when finished. \n\n\t  ");
+	for (i = 0; i <= size; i++)
+    {
+      if (i <= size && scanf ("%d", &tmp) == 1)	// if user input is %d 
+	{
+	  printf ("\t+ ");
+	  sum = sum + tmp;
+    }
+      else
+		break;
+    }
+	printf ("\n\t-----");
+	printf ("\n Total:\t  %d", sum);
+	printf ("\n\t-----");
 }
 
 void
