@@ -5,26 +5,26 @@
 int
 Operators ()
 {
-  int c, a, b;
+  int c, a, b, sum;
   float r;
   printf
     ("Select Option: \n\n"
-     "1. Addition\n"
-     "2. Multiply\n"
-     "3. Substract\n" "4. Division\n" "5. concatenate\n\n Enter Choice: ");
+     "\t 1. Add\n"
+     "\t 2. Multiply\n"
+     "\t 3. Substract\n" "\t 4. Division\n" "\t 5. concatenate\n\n Enter Choice: ");
   scanf ("%d", &c);
   if (c < 6)
     {
-      printf ("\nEnter First number: ");
-      scanf ("%d", &a);
-      printf ("Enter Second number: ");
-      scanf ("%d", &b);
-      switch (c)
+    switch (c)
 	{
 	case 1:
       add ();
 	  break;
 	case 2:
+	  printf ("\nEnter First number: ");
+      scanf ("%d", &a);
+      printf ("Enter Second number: ");
+      scanf ("%d", &b);
 	  multiply (a, b);
 	  break;
 	case 3:

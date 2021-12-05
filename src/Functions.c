@@ -1,6 +1,5 @@
 #include "../Include/basichead.h"
 #include <stdio.h>
-#include <math.h>
 #include <time.h>
 #include <stdlib.h>
 #define size 50
@@ -11,19 +10,20 @@ add (void)
   int i, tmp, sum=0;
 
 printf ("\n\nEnter Numbers, Type Add when finished. \n\n\t  ");
-	for (i = 0; i <= size; i++)
+for (i = 0; i <= size; i++)
     {
       if (i <= size && scanf ("%d", &tmp) == 1)	// if user input is %d 
 	{
 	  printf ("\t+ ");
 	  sum = sum + tmp;
     }
-      else
-		break;
+        else
+	break;
     }
-	printf ("\n\t-----");
-	printf ("\n Total:\t  %d", sum);
-	printf ("\n\t-----");
+
+  printf ("\n\t-----");
+  printf ("\n Total:\t  %d", sum);
+  printf ("\n\t-----");
 }
 
 void
@@ -99,28 +99,34 @@ ConvertBinary (int a)
 void
 numguess (void)
 {
-  int n=10, count = 0, rn, g;
+  int n = 10, count = 0, rn, g;
   printf ("\nGuess a number between 1-10 - Max tries = 3\n\n");
   srand ((unsigned int) time (NULL));
   rn = rand () % n;
-    do {
-        if (count >= 3) {
-        printf ("\nExceeded max tries = %d - Lost the Game\n", count);
-        break;
-        }
-        printf("Enter guessed option: ");
-        scanf("%d", &g);
-        if (g > rn) {
-        count++;
-        printf("Try Lower number!\n");
-        }
-        else if (g < rn) {
-        count++;
-        printf("Try Higher Number!\n");
-        }
-        else {
-        count++;
-        printf("Guessed correct number: %d in %d attempts\n", rn, count);
-        }
-    } while (g != rn);
+  do
+    {
+      if (count >= 3)
+	{
+	  printf ("\nExceeded max tries = %d - Lost the Game\n", count);
+	  break;
+	}
+      printf ("Enter guessed option: ");
+      scanf ("%d", &g);
+      if (g > rn)
+	{
+	  count++;
+	  printf ("Try Lower number!\n");
+	}
+      else if (g < rn)
+	{
+	  count++;
+	  printf ("Try Higher Number!\n");
+	}
+      else
+	{
+	  count++;
+	  printf ("Guessed correct number: %d in %d attempts\n", rn, count);
+	}
+    }
+  while (g != rn);
 }
